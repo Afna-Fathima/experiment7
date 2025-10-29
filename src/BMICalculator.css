@@ -1,0 +1,165 @@
+.calculator-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.calculator-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.btn-calculate {
+  width: 100%;
+  padding: 14px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-calculate:hover {
+  background: #5568d3;
+}
+
+.results-section {
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.result-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.result-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+.result-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.result-status {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.classification-guide {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 13px;
+  color: #666;
+}
+
+.classification-guide p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.classification-guide ul {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.classification-guide li {
+  margin-bottom: 6px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.classification-guide li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.btn-reset {
+  width: 100%;
+  padding: 12px;
+  background: #e0e0e0;
+  color: #555;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-reset:hover {
+  background: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+  .calculator-card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .btn-calculate,
+  .btn-reset {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
