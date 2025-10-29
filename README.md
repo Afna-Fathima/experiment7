@@ -105,17 +105,49 @@ In the project directory, you can run:
 ### `npm start`
 Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm build`
+### `npm run build`
 Builds the app for production to the `build` folder.
 
 ### `npm test`
 Launches the test runner in interactive watch mode.
+
+### `npm run deploy`
+Deploys the production build to GitHub Pages. This runs the build first, then publishes to the `gh-pages` branch.
+
+## 🚀 Deployment - GitHub Pages
+
+This project is deployed and live at:  
+**[https://afna-fathima.github.io/experiment7](https://afna-fathima.github.io/experiment7)**
+
+### Deployment Instructions
+
+1. **Install gh-pages package:**
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+
+2. **Build and deploy:**
+   ```bash
+   npm run deploy
+   ```
+
+3. **Enable GitHub Pages:**
+   - Go to your repository Settings
+   - Navigate to **Pages** section
+   - Select **Deploy from a branch**
+   - Choose the **gh-pages** branch
+   - Click Save
+
+The app will be live at `https://your-github-username.github.io/experiment7`
+
+**Note:** After deployment, it may take a few minutes for GitHub to process and make the site live.
 
 ## Technologies Used
 
 - **React 18** - JavaScript UI library
 - **React DOM 18** - React rendering library for web
 - **react-scripts** - Build tooling for Create React App
+- **gh-pages** - GitHub Pages deployment tool
 - **CSS3** - Styling with responsive design
 - **HTML5** - Markup
 
@@ -129,6 +161,15 @@ Launches the test runner in interactive watch mode.
 ✅ Display BMI value  
 ✅ Display BMI status according to classification  
 ✅ Apply appropriate color styling for each status  
+✅ Deployed to GitHub Pages for live hosting
+
+## Repository Access
+
+**Repository Owner:** Afna-Fathima  
+**Email:** afnafathima@karunya.edu.in  
+**URL:** https://github.com/Afna-Fathima/experiment7
+
+⚠️ **Only the repository owner (Afna-Fathima) has access to this repository. No collaborators or contributors are present.**
 
 ## License
 
